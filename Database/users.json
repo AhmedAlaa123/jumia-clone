@@ -1,0 +1,30 @@
+[
+
+    {
+        "FName":"Ahmed",
+        "LName":"Alaa",
+        "Email":"mm1869695@gmail.com",
+        "password":"1234",
+        "Phone":"01140316573",
+        "AcceptTerms":true,
+        "ReceiveNotification":true
+    },
+    {
+        "FName":"Ebrahim",
+        "LName":"Ahmed",
+        "Email":"eb1869695@gmail.com",
+        "password":"123456",
+        "Phone":"01140316575",
+        "AcceptTerms":false,
+        "ReceiveNotification":false
+    },
+    {
+        "FName":"Khalid",
+        "LName":"Ali",
+        "Email":"KA1869695@gmail.com",
+        "password":"123456dfs",
+        "Phone":"01040316575",
+        "AcceptTerms":true,
+        "ReceiveNotification":false
+    }
+]

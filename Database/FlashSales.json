@@ -1,0 +1,123 @@
+{
+    "time": {
+        "hours":20,
+        "startDate": {
+            "year": 2022,
+            "month": 5,
+            "day": 23,
+            "hour":1,
+            "minut":25,
+            "second":0
+        }
+    },
+    "items": [
+        {
+            "item": {
+                "ItemId": 1,
+                "CateId": 1,
+                "Name": "Star Pasta Big Rings - 1kg",
+                "Price": 15.00,
+                "Discount": 0,
+                "Brand": "Star",
+                "rate": 10,
+                "color": "N/A",
+                "Size": "1Kg",
+                "CountryMaker": "Egypt",
+                "RowMaterial": "N/A",
+                "ImageUrl": "images/Categories/SuperMarket/items/1.jpg"
+            },
+            "numberOfProducts": 30,
+            "reminderProducts": 20
+        },
+        {
+            "item": {
+                "ItemId": 2,
+                "CateId": 1,
+                "Name": "Lipton Lemon Ginger - 20 Bags",
+                "Price": 17.00,
+                "Discount": 12,
+                "Brand": "Lipton",
+                "rate": 12,
+                "color": "N/A",
+                "Size": "Bag 20",
+                "CountryMaker": "Egypt",
+                "RowMaterial": "N/A",
+                "ImageUrl": "images/Categories/SuperMarket/items/2.jpg"
+            },
+            "numberOfProducts": 30,
+            "reminderProducts": 20
+        },
+        {
+            "item": {
+                "ItemId": 3,
+                "CateId": 1,
+                "Name": "Zamzam Basmati Rice - 1 kg",
+                "Price": 25.00,
+                "Discount": 4,
+                "Brand": "Zamzam",
+                "rate": 13,
+                "color": "N/A",
+                "Size": "1Kg",
+                "CountryMaker": "Egypt",
+                "RowMaterial": "N/A",
+                "ImageUrl": "images/Categories/SuperMarket/items/3.jpg"
+            },
+            "numberOfProducts": 30,
+            "reminderProducts": 20
+        },
+        {
+            "item": {
+                "ItemId": 4,
+                "CateId": 1,
+                "Name": "Kit Kat 2 Finger Hazelnut Bar – 1 PC",
+                "Price": 6.60,
+                "Discount": 2,
+                "Brand": "Kit Kat",
+                "rate": 15,
+                "color": "N/A",
+                "Size": "1 PC",
+                "CountryMaker": "Egypt",
+                "RowMaterial": "N/A",
+                "ImageUrl": "images/Categories/SuperMarket/items/4.jpg"
+            },
+            "numberOfProducts": 30,
+            "reminderProducts": 20
+        },
+        {
+            "item": {
+                "ItemId": 8,
+                "CateId": 2,
+                "Name": "AKAI اكاي ستور تيشيرت قطن درجة اولى للرجال - كحلي",
+                "Price": 220.0,
+                "Discount": 25,
+                "Brand": "AKAI",
+                "rate": 12,
+                "color": "Dark blue",
+                "Size": "N/A",
+                "CountryMaker": "Egypt",
+                "RowMaterial": "Cotton",
+                "ImageUrl": "images/Categories/Fashion/items/2.jpg"
+            },
+            "numberOfProducts": 30,
+            "reminderProducts": 20
+        },
+        {
+            "item": {
+                "ItemId": 14,
+                "CateId": 3,
+                "Name": "Kesh King Anti-Hair Fall Shampoo - 200 Ml",
+                "Price": 199.0,
+                "Discount": 53,
+                "Brand": "Kesh King ",
+                "rate": 14,
+                "color": "N/A",
+                "Size": "200ml",
+                "CountryMaker": "N/A",
+                "RowMaterial": "N/A",
+                "ImageUrl": "images/Categories/Beauty_Health/items/2.jpg"
+            },
+            "numberOfProducts": 30,
+            "reminderProducts": 20
+        }
+    ]
+}

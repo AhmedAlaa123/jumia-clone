@@ -1,0 +1,60 @@
+[
+        {
+            "CategoryId":1,
+            "Arabic_Name":"بقاله",
+            "English_Name":"Supermarket",
+            "Category_Image_baseUrl":"images/Categories/supermarket",
+            "Category_images":[
+                "1.jpg",
+                "2.jpg",
+                "3.jpg"
+            ],
+            "Category_Icon":"fa-apple"           
+        },
+        {
+            "CategoryId":2,
+            "Arabic_Name":"ازياء",
+            "English_Name":"Fasion",
+            "Category_Image_baseUrl":"images/Categories/Fashion",
+            "Category_images":[
+                "1.jpg",
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "5.jpg"
+            ],
+            
+            "Category_Icon":"fa-tshirt"
+        },
+        {
+            "CategoryId":3,
+            "Arabic_Name":"الصحه والجمال",
+            "English_Name":"Health & Beauty",
+            "Category_Image_baseUrl":"images/Categories/Beauty_Health",
+            "Category_images":[
+                "1.png"
+            ],
+            "Category_Icon":"fa-virus-slash"
+        },
+        {
+            "CategoryId":4,
+            "Arabic_Name":"المنزل والمكتب",
+            "English_Name":"Home & Office",
+            "Category_Image_baseUrl":"images/Categories/Home_Office",
+            "Category_images":[
+                "1.png"
+            ],
+            "Category_Icon":"fa-home"
+
+        },
+        {
+            "CategoryId":5,
+            "Arabic_Name":"الكترونيات",
+            "English_Name":"Electronics",
+            "Category_Image_baseUrl":"images/Categories/Electronics",
+            "Category_images":[
+                "1.png"
+            ],
+            "Category_Icon":"fa-tv"
+        }
+    ]

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صحه انشاء حساب</title>
+    <link rel="icon" href="https://www.jumia.com.eg/assets_he/favicon.87f00114.ico">
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/create_acount.css">
+</head>
+
+<body>
+
+    <!-- #region Header  -->
+
+    <header>
+        <div class="container">
+            <div class="row  justify-content-between align-items-center">
+                <div class="brand ">
+                    <a href="../index.html" class="row align-items-center">
+                        <img src="../images/Main Images/logo_icon.ico" alt="logo">
+                        <span class="logo">jumia</span>
+                    </a>
+                </div>
+                <form action="#" class="row">
+                    <div class="search-input">
+                        <input type="text" placeholder="البحث عن منتجات، والعلامات التجارية والأقسام" id="text-search">
+                        <label for="text-search" class=" search-icon">
+                            <i class="fa fa-search"></i>
+                        </label>
+                    </div>
+                    <input type="submit" value="البحث" class="btn">
+                </form>
+
+                <nav class="row">
+                    <div class="nav-item">
+                        <div class="nav-item-title active">
+                            <i class="fa fa-user"></i>
+                            <span>
+                                تسجيل الدخول
+                            </span>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+
+                        <ul class="drop-down-menu card">
+                            <li class="drop-down-box border-bottom-1">
+                                <div class="drop-down-box">
+                                    <a href="./sign_in.html" class="btn">تسجيل الدخول</a>
+                                </div>
+                            </li>
+                            <div class="drop-down-box">
+                                <li class="drop-down-menu-item">
+                                    <a href="#">
+                                        <i class="fa fa-user drop-down-icon"></i>
+                                        <span>الحساب</span>
+                                    </a>
+                                </li>
+                                <li class="drop-down-menu-item">
+                                    <a href="#">
+                                        <i class="fa fa-briefcase drop-down-icon"></i>
+                                        <span>الطلبات</span>
+                                    </a>
+                                </li>
+                                <li class="drop-down-menu-item">
+                                    <a href="#">
+                                        <i class="fa fa-heart drop-down-icon"></i>المنتجات المحفوظه
+                                    </a>
+                                </li>
+                            </div>
+
+                        </ul>
+                    </div>
+
+                    <div class="nav-item">
+                        <div class="nav-item-title">
+
+                            <i class="fa fa-question-circle"></i>
+                            <span>
+                                المساعده
+                            </span>
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <ul class="drop-down-menu card">
+
+                            <li class="drop-down-menu-item ">
+                                <a href="#">
+                                    مركز المساعده
+                                </a>
+
+                            </li>
+                            <li class="drop-down-menu-item"><a href="#">المساعده فى طلبى</a></li>
+                            <li class="drop-down-menu-item"><a href="#">الغاء الطلب</a></li>
+                            <li class="drop-down-menu-item"><a href="#">الارجاع والاسترداد</a></li>
+                            <li class="drop-down-menu-item"><a href="#">طرق الدفع</a></li>
+
+                            <li class="drop-down-box border-top-1">
+                                <a href="#" class="btn">
+                                    <i class="fa fa-comment-dots  drop-down-icon"></i>تحدث معنا
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-item">
+                        <a href="#"><i class="fa fa-shopping-cart"></i>
+                            السله
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- #endregion  Header  -->
+
+    <!-- #region Main-->
+
+    <!-- #endregion Main-->
+    <main class="margin-block-start-20 margin-block-end-20">
+        <div class="container">
+            <h1 class="text-main margin-block-end-20">انشاء حساب</h1>
+
+            <form id="user-data" action="#" method="post" class="column">
+                <div class="row margin-block-end-20">
+                    <div class="col column">
+                        <input type="text" placeholder="الاسم الاول" name="fname" required>
+                    </div>
+                    <div class="col column">
+                        <input type="text" placeholder="اسم العائله" name="lname" required>
+                    </div>
+                </div>
+                <div class="row margin-block-end-20">
+                    <div class="col column">
+                        <input  type="email"  placeholder="البريد الالكترونى" name="email" required>
+                    </div>
+                    <div class="col column" id="password_container">
+                        <i class="fa fa-eye fa-eye-slash" id="show-password"></i>
+                        <input type="password" id="password" name="password" placeholder="كلمه المرور" required>
+                    </div>
+                </div>
+              <div class="row margin-block-end-20">
+                <div class="col row justify-content-between align-items-end">
+                    <label id="phone-code">20+</label>
+                    <input  type="tel" placeholder="رقم الهاتف (اختيارى)" name="phone" style="display:inline-block;width: calc(100% - 40px);">
+                </div>
+              </div>
+
+              <div class="column margin-block-end-20">
+                  <div class="row align-items-center">
+                      <input type="checkbox" name="acceptTerms" id="acceptTerms" style="margin-left:10px ;">
+                      <p><label for="acceptTerms">اوافق على</label> <a href="#" target="_blank" class="text-main">الشروط والاحكام</a><br>و إشعار الخصوصية وملفات تعريف الارتباط الخاصة ب جوميا.</p>
+                  </div>
+              </div>
+              <div>
+                  <input type="checkbox" name="get_gumia_news" id="get_gumia_news" style="margin-left:10px ;" checked>
+                  <label for="get_gumia_news">اريد تلقى نشره جوميا الاخباريه وأفضل العروض والصفقات</label>
+              </div>
+              <button id="btn-sign-up-mail" class="btn margin-block-end-20 margin-block-start-20 " style="padding:16px" >انشاء الحساب</button>
+             <div  class="sperator" data-text="أو"></div>
+              <button id="btn-sign-up-face"  class="btn-face margin-block-end-20 margin-block-start-20 " style="padding:16px">التسجيل عن طريق الفيسبوك</button>
+            </form>
+            <div class="column align-items-center margin-block-end-20">
+                <p class="margin-block-end-20">هل لديك حساب بالفعل ؟</p>
+                <a href="./sign_in.html"  class="text-main" style="font-weight:500 ;">تسجيل الدخول</a>
+            </div>
+        </div>
+    </main>
+    <!-- #region Footer-->
+    <!--Start Footer-->
+    <div id="subscribe-news">
+        <div class="container">
+            <div class="row">
+                <div class="logo ">
+                    <a href="../index.html" class="row align-items-center">
+                        <img src="../images/Main Images/logo_icon.ico" alt="logo">
+                        <span>jumia</span>
+                    </a>
+                </div>
+                <!--/.logo-->
+
+                <div class="subscribe">
+                    <h4>هل انت جديد على جوميا؟</h4>
+                    <p>اشترك فى نشرتنا الاخباريه للحصول على احدث العروض</p>
+                    <form action="#" class="row">
+                        <div class="message-input">
+                            <label for="message-box" class="mail-icon"> <i class="fa fa-envelope"></i></label>
+                            <input type="mail" id="message-box" placeholder="ادخل بريدك الالكترونى">
+                        </div>
+                        <button class="btn-outline">ذكر</button>
+                        <button class="btn-outline">انثى</button>
+                    </form>
+
+                </div>
+                <!--/.subscribe-->
+
+                <div class="download-app">
+                    <div class="row align-items-center">
+                        <img class="logo" src="../images/Main Images/logo_icon.ico" alt="logo">
+                        <div class="download-app-desc">
+                            <h4>
+                                تنزيل تطبيق جوميا المجانى
+                            </h4>
+                            <p>
+                                احصل على العديد من العروض العصريه
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row download-app-store align-items-center">
+                        <a href="#">
+                            <img src="https://tse1.mm.bing.net/th?id=OIP.rJEQKk7W5F0bhYlJFTyLTQHaCj&pid=Api&P=0&w=467&h=161"
+                                alt="download from google play">
+
+                        </a>
+                        <a href="#">
+                            <img src="http://www.seeklogo.net/wp-content/uploads/2015/09/download-on-the-app-store-badge.png"
+                                alt="download from app store">
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!--/.row-->
+    </div>
+    <!--./.container-->
+    </div>
+    <!--/#subscribe-news-->
+
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col">
+                    <h4>خدمه العملاء</h4>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                مركز المساعده
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                اتصل بنا
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                كيفيه عمل طلب شراء
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" target="_blank">طرق الدفع</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">سياسه الشحن</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">الابلاغ عن منتج</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>من نحن</h4>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                انضم الى جوميا
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                الشروط والاحكام
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                سياسه الخصوصيه
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                Jumia Express
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                المتاجر الرسميه
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                خدمات جوميا للشحن
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>زود مبيعاتك</h4>
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank">
+                                بيع على جوميا
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                كن شريكا للخدمات اللوجستيه
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">
+                                ابدا بزنس مع جوميا (J-Force)
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h4>جوميا دوليا</h4>
+                    <div class="row">
+                        <ul class="col">
+                            <li>
+                                <a href="#" target="_blank">
+                                    الجزائر
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    ساحل العاج
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    غانا
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" target="_blank">
+                                    كينيا
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    المغرب
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="col">
+                            <li>
+                                <a href="#" target="_blank">
+                                    نيجيريا
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    السنغال
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    تونس
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank">
+                                    اوغندا
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--  start Social and ways to pay -->
+            <div class="row">
+
+                <div class="col">
+                    <div class="row">
+                        <!-- Start Social Media -->
+                        <div class="col">
+                            <h4>تابعونا على</h4>
+                            <ul class="row Social-icons align-items-center">
+                                <li class="social-icon">
+                                    <a href="https://www.facebook.com" title="Facebook jumia Egypt">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="social-icon">
+                                    <a href="https://www.twiiter.com" title="Twitter Jumia Egypt">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="social-icon">
+                                    <a href="https://www.instagram.com" title="Instagram Jumia Egypt">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="social-icon">
+                                    <a href="https://www.youtube.com" title="Youtbe Jumia Egypt">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Social Media -->
+
+                        <!-- Start Paying Ways -->
+                        <div class="col pays-icons">
+                            <h4>طرق الدفع</h4>
+                            <ul class="row align-items-center">
+                                <li class="pay-icon">
+                                    <a href="#" target="_blank" title="Cash on Delivery">
+                                        <i class="fa fa-hand-holding"></i>
+                                    </a>
+                                </li>
+                                <li class="pay-icon">
+                                    <a href="#" target="_blank" title="visa">
+                                        <i class="fa fa-cc-visa"></i>
+                                    </a>
+                                </li>
+                                <li class="pay-icon">
+                                    <a href="#" target="_blank" title="Mastercard">
+                                        <i class="fa fa-cc-mastercard"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Paying Ways -->
+
+                    </div>
+                </div>
+                <!-- Empty Column -->
+                <div class="col"></div>
+                <!-- Empty Column -->
+
+            </div>
+            <!--  End Social and ways to pay -->
+            <div class="line"></div>
+            <p class="copy-rights">
+                كل الحقوق محفوظه &copy; <span id="copy-year" style="margin-left: 5px; margin-right:5px"></span>جوميا مصر
+                .
+            </p>
+        </div>
+        </div>
+    </footer>
+
+    <!--End Footer-->
+    <!-- #endregion Footer-->
+
+    <!-- Start Scripts -->
+    <script src="https://kit.fontawesome.com/0b7cff1468.js" crossorigin="anonymous"></script>
+    <script src="../js/master.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/create_acount.js"></script>
+    <!-- End Scripts -->
+</body>
+
+</html>

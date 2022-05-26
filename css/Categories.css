@@ -1,0 +1,12 @@
+
+#no-elemnt-message{
+ 
+    font-size: 4rem;
+    /* padding: 30px; */
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-weight: 400;
+}

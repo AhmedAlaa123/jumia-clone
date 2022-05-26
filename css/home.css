@@ -1,0 +1,45 @@
+#Sections-menu li a{
+    transition: var(--main-transition);
+    color: var(--alt-color);
+    font-size: 13px;
+    display: block;
+}
+#Sections-menu li a:hover{
+    color: var(--main-color);
+}
+#home-slider-inner{
+    position: relative;
+    width: 100%;
+}
+#home-slider-inner >*{
+transition: var(--main-transition);
+   opacity: 0;
+   z-index: -1;
+}
+
+#home-slider-inner>*.active{
+   opacity: 1;
+   z-index: 1;
+}
+#about-jumai{
+    padding:  30px 20px;
+}
+.about-jumai-item p {
+    
+    font-size: 12px;
+}
+.about-jumai-item .about-jumai-item-head{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--alt-color) !important;
+
+
+}
+.about-jumai-item .about-jumai-item-desc{
+    line-height: 1.6;
+    word-spacing: 2px;
+    color: var(--alt-color);
+}
+/* #falsh-sale{
+    display: none;
+} */

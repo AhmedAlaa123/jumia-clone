@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+#subscribe-news{
+    padding: 30px 0;
+    background-color: #282828;
+    color: #c7c7cd;
+    font-size: 13px;
+}
+
+#subscribe-news .logo{
+    flex: 1;
+}
+#subscribe-news .logo span{
+    color: #fff;
+    font-family: 'Lobster', cursive;
+    font-size: 2.4rem;
+    margin-right: 10px;
+    margin-inline-start: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.7;
+}
+#subscribe-news .logo img{
+    width: 45px;
+}
+#subscribe-news h4{
+    color: #fff;
+    margin-bottom: 10px;
+}
+#subscribe-news p{
+
+    margin-bottom: 20px;
+}
+#subscribe-news .subscribe{
+    flex:2
+}
+#subscribe-news .subscribe form{
+    width: calc(100% - 20px);
+    margin-left:20px ;
+    margin-inline-end: 20px;
+    display: flex;
+}
+
+#subscribe-news .subscribe .message-input{
+    flex: 1;
+    position: relative;
+    min-height: 35px;
+    display: flex;
+}
+#subscribe-news .subscribe .message-input .mail-icon{
+    position: absolute;
+    font-size:1.2rem;
+    right: 10px;
+    width: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#subscribe-news .subscribe .message-input input{
+    flex: 1;
+    padding: 5px 40px 5px 10px;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+
+
+#subscribe-news .download-app{
+    flex: 1;
+    
+}
+#subscribe-news .download-app .logo
+{
+    width: 50px;
+    align-self: start;
+    margin-left: 20px;
+    margin-inline-end: 20px;
+}
+/* #subscribe-news .download-app-store{
+    display: flex;
+    align-items: center;
+} */
+#subscribe-news .download-app-store{
+    justify-content: center;
+}
+#subscribe-news .download-app-store img{
+  max-width: 100px;
+  margin-left: 10px;
+
+}
+
+
+/*Start Footer*/
+footer{
+    padding: 20px 0;
+    background-color: #323232;
+    color: #c7c7cd;
+}
+footer h4{
+    color: #fff;
+    margin-bottom: 10px;
+}
+footer a{
+    color: #c7c7cd;
+    font-size: 12px;
+}
+footer li{
+    margin-bottom: 5px;
+}
+footer .social-icon,
+footer .pay-icon
+{
+    margin-inline: 5px;
+    
+}
+footer .social-icon a,
+footer .pay-icon a{
+    font-size: 1.3rem;
+}
+
+footer a:not(.social-icon a):hover,
+footer a:not(.pay-icon a):hover{
+    text-decoration: underline;
+}
+footer .line{
+    background-color: var(--border-color);
+    height: 1px ;
+    margin-bottom: 20px;
+}
+footer .copy-rights{
+    text-align: center;
+    margin: 10px 0;
+}
+/*End Footer*/

@@ -1,0 +1,64 @@
+
+body{
+    background-color: #fff;
+}
+
+main{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:15px;
+    padding-right: 15px;
+}
+@media (min-width:1200px)
+{
+    main{
+        max-width: 900px;
+    }
+}
+
+.col{
+ max-width:calc(50% - 10px)   
+}
+
+form#user-data{
+font-size: 0.9rem;
+}
+form#user-data input{
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--alt-color);
+
+    font-weight: 400;
+}
+form#user-data input:not([type='tel'])
+{
+    padding: 15px 5px;
+}
+form#user-data input:is([type='tel']){
+    padding: 10px;
+}
+
+form#user-data #password_container{
+    position: relative;
+}
+form#user-data #password_container i{
+    position: absolute;
+    left: 10px;
+    bottom: 14px;
+    cursor: pointer;
+    color: var(--alt-color);
+
+}
+form#user-data button{
+    margin-right: 0;
+}
+form#user-data input::-webkit-input-placeholder{
+   transition:opacity 0.5s ease-in-out;
+}
+form#user-data input:focus::-webkit-input-placeholder{
+    opacity: 0;
+}
+form#user-data input:checked{
+    background-color: var(--main-color);
+}
