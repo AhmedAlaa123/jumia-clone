@@ -44,3 +44,7 @@ navItemBtn.forEach(element => {
     })
 
 })
+
+document.forms[0].addEventListener('submit',e=>{
+    e.preventDefault()
+})
