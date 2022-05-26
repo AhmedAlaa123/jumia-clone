@@ -380,6 +380,12 @@ body {
 .text-main{
     color: var(--main-color);
 }
+.text-center{
+    text-align: center;
+}
+.a-hover-underlin:hover{
+    text-decoration: underline;
+}
 .wrap{
     flex-wrap: wrap;
 }

@@ -2,7 +2,7 @@ var showPassword = document.getElementById('show-password')
 var passwordInput = document.getElementById('password')
 var users = [];
 
-getUsers();
+
 
 
 showPassword.addEventListener('click', (e) => {
@@ -15,21 +15,27 @@ showPassword.addEventListener('click', (e) => {
         e.target.classList.toggle('fa-eye-slash')
 })
 
+if(!sessionStorage.getItem('users'))
+{
+    getData('get','../Database/users.json',false,getUsers)
+}
+else{
+    users=JSON.parse(sessionStorage.getItem('users'))
+}
 
-
-
-function getUsers() {
-    var xhr = new XMLHttpRequest()
-
-    xhr.onreadystatechange = (event) => {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            users = JSON.parse(xhr.responseText)
-            sessionStorage.setItem('users', JSON.stringify(users))
-            console.log(users)
-        }
-    }
-    xhr.open('get', '../Database/users.json', false)
-    xhr.send()
+function getUsers(usersData) {
+    users=usersData
+    sessionStorage.setItem('users', JSON.stringify(users))
+    console.log(users)
+    // var xhr = new XMLHttpRequest()
+    
+    // xhr.onreadystatechange = (event) => {
+    //     if (xhr.readyState == 4 && xhr.status == 200) {
+    //         users = JSON.parse(xhr.responseText)
+    //     }
+    // }
+    // xhr.open('get', '../Database/users.json', false)
+    // xhr.send()
 }
 
 
@@ -37,15 +43,16 @@ var userDataForm = document.getElementById('user-data')
 userDataForm.addEventListener('submit', e => {
 
     e.preventDefault()
-    if (null) {
-        getUsers()
+    if (!users.length) {
+        getData('get','../Database/users.json',false,getUsers)
         return
     }
-    var index = users.findIndex(user => user.Email == e.email)
+    // console.log(e.email)
+    var index = users.findIndex(user => user.Email === e.target.email.value)
+    // console.log(index,'index')
     if (index > -1) {
         alert('This Email Is Used For Another User')
-        console.log(index)
-        console.log(users)
+        e.target.email.focus()
     }
     else {
         //    console.log(e.target.email)
@@ -61,7 +68,8 @@ userDataForm.addEventListener('submit', e => {
         users.push(user)
         sessionStorage.setItem('users', JSON.stringify(users))
         alert('Account is Created')
-        location.href = '../index.html'
+        history.back()
+        // location.href = '../index.html'
     }
 
 

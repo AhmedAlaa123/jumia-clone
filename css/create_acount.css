@@ -23,15 +23,17 @@ main{
 form#user-data{
 font-size: 0.9rem;
 }
-form#user-data input{
+form#user-data input,
+form.user-data input{
+    background-color: transparent;
     outline: none;
     border: 0;
     border-bottom: 1px solid var(--border-color);
     color: var(--alt-color);
-
     font-weight: 400;
 }
-form#user-data input:not([type='tel'])
+form#user-data input:not([type='tel']),
+form.user-data input:not([type='tel'])
 {
     padding: 15px 5px;
 }
@@ -39,7 +41,9 @@ form#user-data input:is([type='tel']){
     padding: 10px;
 }
 
-form#user-data #password_container{
+form#user-data #password_container,
+form.user-data .password_container
+{
     position: relative;
 }
 form#user-data #password_container i{
