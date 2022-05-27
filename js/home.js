@@ -6,36 +6,49 @@ var btnSlidLeft = document.querySelector('.prev');
 var slidingElementLength = 0
 var sildingElements = null
 var indicators = null
+var overlay = document.getElementById('overlay')
 
+// check if overlay is shown or not 
+if (!sessionStorage.getItem('shown')) {
+    overlay.style.display='flex'
+    setTimeout(() => {
+        console.log('yes')
+        document.body.removeChild(overlay)
+        sessionStorage.setItem('shown',true)
+    }, 5000)
+}else{
+    document.body.removeChild(overlay)
+}
 
+// sliding left
 btnSlidLeft.addEventListener('click', e => {
-    
+
     if (!sildingElements || !indicators) return
     if (slidingIndex >= slidingElementLength)
-    slidingIndex = 0;
-        console.log(slidingIndex,slidingElementLength)
-    if(slidingIndex<slidingElementLength)
+        slidingIndex = 0;
+    console.log(slidingIndex, slidingElementLength)
+    if (slidingIndex < slidingElementLength)
         sildElement()
     slidingIndex++
 })
 btnSlidRight.addEventListener('click', e => {
     if (!sildingElements || !indicators) return
     console.log(slidingIndex)
-    if (slidingIndex <0 )
-    slidingIndex =slidingElementLength-1 ;
-  
-         sildElement()
+    if (slidingIndex < 0)
+        slidingIndex = slidingElementLength - 1;
+
+    sildElement()
     slidingIndex--
 })
 function getSilderImages() {
     var HomeSliderInner = document.getElementById('home-slider-inner')
-    var jumaiAllNeedItemsContainer=document.getElementById('jumia-all-you-need-anoncement')
+    var jumaiAllNeedItemsContainer = document.getElementById('jumia-all-you-need-anoncement')
     var httpXml = new XMLHttpRequest();
 
     httpXml.onreadystatechange = function (event) {
         if (this.readyState === 4 && this.status === 200) {
             var images = JSON.parse(this.responseText)
-            showjumaiAllNeedItems(images,jumaiAllNeedItemsContainer)
+            showjumaiAllNeedItems(images, jumaiAllNeedItemsContainer)
             slidingElementLength = images.length
             var bollitsContainer = document.querySelector('.bollits');
             var ImageElement;
@@ -87,11 +100,11 @@ function getCategoriesData() {
             console.log(Categories)
 
             Categories.forEach(element => {
-                
+
                 var ListItem = document.createElement('li')
                 var Anchor = document.createElement('a')
                 var CategoryIcon = document.createElement('i');
-                Anchor.setAttribute('href', `./pages/Categories.html?CategoryId=${element.CategoryId}`)
+                Anchor.setAttribute('href', `./pages/Categories/?CategoryId=${element.CategoryId}`)
                 // Anchor.setAttribute('target', '_blank')
 
                 CategoryIcon.className = `fa ${element.Category_Icon} margin-inline-end-10`
@@ -112,14 +125,14 @@ function getCategoriesData() {
 
 }
 function startSliding() {
-   
+
     console.log(indicators)
     var intervalId = setInterval(() => {
         if (!indicators || !sildingElements) {
             clearInterval(intervalId)
             return
         }
-        if (slidingIndex >= sildingElements.length||slidingIndex <0 ) {
+        if (slidingIndex >= sildingElements.length || slidingIndex < 0) {
             slidingIndex = 0
         }
         sildElement();
@@ -138,19 +151,18 @@ function sildElement() {
     indicators[slidingIndex].classList.add('active')
 }
 
-function showjumaiAllNeedItems(images,container)
-{
-    images.forEach(image=>{
-        var div=document.createElement('div')
-        div.className='col-6 card'
-        div.style.cursor='pointer'
-        div.style.border='2px solid var(--border-color)'
-        var img=document.createElement('img')
-        img.className='img-cover'
-        img.style.maxHeight='350px'
-        img.setAttribute('src',image)
+function showjumaiAllNeedItems(images, container) {
+    images.forEach(image => {
+        var div = document.createElement('div')
+        div.className = 'col-6 card'
+        div.style.cursor = 'pointer'
+        div.style.border = '2px solid var(--border-color)'
+        var img = document.createElement('img')
+        img.className = 'img-cover'
+        img.style.maxHeight = '350px'
+        img.setAttribute('src', image)
         div.appendChild(img)
-        
+
         container.appendChild(div)
 
 

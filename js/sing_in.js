@@ -3,7 +3,7 @@ var users=[]
 var rememberMeCbx=document.getElementById('remember-me')
 if(!sessionStorage.getItem('users'))
 {
-    getData('get','../Database/users.json',false,getUsers)
+    getData('get','../../Database/users.json',false,getUsers)
 }
 else{
     users=JSON.parse(sessionStorage.getItem('users'))
@@ -52,7 +52,7 @@ loginForm.addEventListener('submit',(e)=>{
     }
     if(users.length==0)
     {
-        getData('get','../Database/users.json',false,getUsers)
+        getData('get','../../Database/users.json',false,getUsers)
         return
     }
     console.log(users,'users')
@@ -65,7 +65,7 @@ loginForm.addEventListener('submit',(e)=>{
 
         alert('Thanks for Sign in')
         sessionStorage.setItem('issigned',true)
-        location.href='../index.html';
+        location.href='/';
     }
     else{
         alert('Email Or Password is Wrrong!')

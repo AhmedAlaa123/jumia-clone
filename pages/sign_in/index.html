@@ -5,44 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>جوميا مصر | أكبر أونلاين مول لتسوق عروض الإلكترونيات والموبايل والأزياء والأجهزة المنزلية والسوبر ماركت
-        ومستلزمات التنظيف وغيرها!</title>
-    <link rel="icon" href="https://www.jumia.com.eg/assets_he/favicon.87f00114.ico">
-    <link rel="stylesheet" href="./css/master.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/home.css">
-
+    <title>صفحه تسجيل الدخول</title>
+    <link rel="stylesheet" href="../../css/create_acount.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/master.css">
 
 </head>
 
 <body>
-
-    <div id="overlay" class=" row justify-content-center align-items-center">
-        <div class="rotate">
-            <img src="./images/Main Images/logo_icon.ico" alt="logo">
-            <span class="logo">jumia</span>
-        </div>
-    </div>
-
-    <!-- Start Page Header -->
-    <!--Start Banner-->
-    <div class="banner">
-        <div class="container">
-            <a href="./pages/free-shipping">
-                <img src="./images/Main Images/banner_img.jpg" alt="annocment">
-            </a>
-        </div>
-    </div>
-
-    <!-- End Banner-->
-
+    <!-- #region Header-->
     <header>
         <div class="container">
             <div class="row  justify-content-between align-items-center">
                 <div class="brand ">
-                    <a href="#" class="row align-items-center">
-                        <img src="./images/Main Images/logo_icon.ico" alt="logo">
+                    <a href="/" class="row align-items-center">
+                        <img src="../../images/Main Images/logo_icon.ico" alt="logo">
                         <span class="logo">jumia</span>
                     </a>
                 </div>
@@ -69,7 +47,7 @@
                         <ul class="drop-down-menu card">
                             <li class="drop-down-box border-bottom-1">
                                 <div class="drop-down-box">
-                                    <a href="./pages/sign_in/" class="btn">تسجيل الدخول</a>
+                                    <a href="#" class="btn">تسجيل الدخول</a>
                                 </div>
                             </li>
                             <div class="drop-down-box">
@@ -125,7 +103,7 @@
                         </ul>
                     </div>
                     <div class="nav-item">
-                        <a href="/pages/Cart"><i class="fa fa-shopping-cart"></i>
+                        <a href="/pages/Cart/"><i class="fa fa-shopping-cart"></i>
                             السله
                         </a>
                     </div>
@@ -135,147 +113,69 @@
         </div>
 
     </header>
+    <!-- #endregion  Header-->
 
-    <!-- End Page Header -->
+    <!-- #region  Main-->
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="column col justify-content-between margin-block-start-20 margin-block-end-20 padding"
+                    id="sigin-in">
+                    <h2 class="text-center text-main">تسجيل الدخول</h2>
+                    <form action="#" id="user-data" class="column margin-block-start-20 padding"
+                        style="border-left: 1px solid var(--border-color);">
+                        <input type="email" name="email" id="email" placeholder="البريد الالكترونى"
+                            class="margin-block-end-20" required>
+                        <div class="column margin-block-start-20 margin-block-end-20" id="password_container">
+                            <i class="fa fa-eye fa-eye-slash" id="show-password"></i>
+                            <input type="password" id="password" name="password" placeholder="كلمه المرور" required>
+                        </div>
+                        <div class="row justify-content-between margin-block-end-20 margin-block-start-20">
+                            <div>
+                                <input type="checkbox" id="remember-me" style="cursor: pointer;">
+                                <label for="remember-me" style="cursor: pointer;">تذكرنى</label>
+                            </div>
+                            <a href="#" class="text-main a-hover-underlin"><b>هل نسيت كلمه السر ؟</b></a>
+                        </div>
+                        <button type="submit" id="btn-sign-up-mail"
+                            class="btn margin-block-end-20 margin-block-start-20 " style="padding:16px">تسجيل
+                            الدخول</button>
 
-    <main class="container margin-block-start-20">
-        <section id="intro" class="row">
+                        <button id="btn-sign-up-face" class="btn-face margin-block-end-20 margin-block-start-20 "
+                            style="padding:16px">التسجيل عن طريق الفيسبوك</button>
+                    </form>
+                </div>
 
-            <aside class="col margin-inline-end-20 padding bg-white">
-                <ul id="Sections-menu">
-
-                </ul>
-            </aside>
-
-            <section class="slider col-2 margin-inline-end-20" style="flex:50%">
-                <div class="slider-inner">
-                    <div class="silder-inner-item" id="home-slider-inner">
+                <div class="column col padding justify-content-between margin-block-start-20 margin-block-end-20"
+                    id="sign-up">
+                    <div>
+                        <h2 class="text-center text-main">انشاء حساب جوميا</h2>
+                        <p class="margin-block-start-20" style="font-size: 1.2rem;">
+                            قم بإنشاء حسابك الخاص علي جوميا بكل سهولة عن طريق الايميل او عن طريق الفيسبوك
+                        </p>
 
                     </div>
+                    <div class="column">
+                        <a id="btn-sign-up-mail" class="btn margin-block-end-20 margin-block-start-20 text-center"
+                            style="padding:16px" href="/pages/create_account/">انشاء الحساب باستخدام البريد الالكترونى</a>
+
+                        <button id="btn-sign-up-face" class="btn-face margin-block-end-20 margin-block-start-20 "
+                            style="padding:16px">التسجيل عن طريق الفيسبوك</button>
+                    </div>
                 </div>
-                <span class="next btn-slid active"><i class="fa fa-chevron-right"></i></span>
-                <span class="prev btn-slid"><i class="fa fa-chevron-left"></i></span>
-
-                <ul class="bollits row">
-                </ul>
-            </section>
-            <div class="column col">
-                <img src="./images/Home Images/flash.png" class="margin-block-end-20" alt="">
-                <img src="./images/Home Images/help.jpg" alt="">
             </div>
-        </section>
+        </div>
+    </div>
+    <!-- #endregion Main-->
 
-        <section id="jumia-express-image">
-            <div class="container margin-block-start-20 margin-block-end-20 card" style="padding: 0; ">
-                <img class="img-cover"
-                    src="https://eg.jumia.is/cms/MD-22/JE-General_New/Jumia_Express_-1152x252_AR-(4).jpg" alt="">
-            </div>
-            </div>
-        </section>
-
-        <section id="jumia-all-you-need">
-            <div class="section-title row justify-content-center padding align-items-center"
-                style="background-color: #FEE2CC;">كل ما تحتاجه!</div>
-            <div id="jumia-all-you-need-anoncement"
-                class="row padding margin-block-start-20 margin-block-end-20 wrap justify-content-between">
-
-            </div>
-
-        </section>
-
-
-        <section id="about-jumai" class=" bg-white card margin-block-end-20 margin-block-start-20">
-            <div class="about-jumai-item margin-block-end-20">
-                <h3 class="about-jumai-item-head margin-block-end-20">
-                    جوميا مصر - أكبر موقع للتسوق عبر الإنترنت
-                </h3>
-                <p class="about-jumai-item-desc">
-                    أصبحت مواقع التسوق عبر الإنترنت الآن جزء من حياتنا اليومية، لأن الجميع يتمتع بإمكانية شراء كل ما
-                    يحتاجه، سواء كانت ملابس أو إلكترونيات، دون الحاجة إلى الانتقال من المنزل. هذا ما تقدمه جوميا مصر،
-                    والأفضل من هذا أن <strong>جوميا مصر</strong> توفر لك امكانية العثور علي كل المنتجات التي تبحث عنها
-                    في متجر واحد. هذا ما يجعل جوميا أحد أفضل مواقع تسوق عبر الإنترنت في مصر.
-                </p>
-            </div>
-            <div class="about-jumai-item margin-block-end-20">
-                <h3 class="about-jumai-item-head margin-block-end-20">
-                    استمتع بعروض وخصومات من جوميا لا تنتهي
-                </h3>
-                <p class="about-jumai-item-desc ">
-                    جوميا هي موقع تسوق الكتروني ممتع وسهل الاستخدام عند الحاجة إلي شراء أي نوع من المنتجات والأجهزة.
-                    نؤكد لك أنك ستعثر على شيء يعجبك في الكتالوج الخاص بنا عند التصفح عبر الانترنت في جوميا مصر. نوفر لكم
-                    <strong>كتالوج ملابس</strong> اون لاين يحتوي علي أكثر من مليون منتج للاختيار من بينهم! يمكنك التسوق
-                    لأي شيء تحتاجه سواء كنت تبحث عن<strong> ملابس محجبات</strong> او ملابس الأطفال واستمتع بالحصول علي
-                    <strong>احدث الازياء</strong> في مصر. جوميا مصر هي واحدة من أكبر مواقع تسوق اون لاين لأننا نسعى
-                    دائمًا إلى توسيع الكتالوج الخاص بنا لتقديم جميع المنتجات والاجهزة التي يمكن لعملائنا أن يبحثوا عن
-                    شرائها عبر الإنترنت
-                </p>
-            </div>
-
-            <h3 style="font-size: 1.6rem; font-weight:400" class="margin-block-end-20 text-main">تسوق الآن جميع المنتجات
-                عبر الإنترنت</h3>
-
-            <div class="about-jumai-item margin-block-end-20">
-                <h3 class="about-jumai-item-head margin-block-end-20">
-                    اطلب الكترونيات او اجهزة منزلية من جوميا مصر
-                </h3>
-                <p class="about-jumai-item-desc ">
-                    اشتري الاكلات والطعام المفضل لديك من خلال<strong> سوبرماركت جوميا</strong> الخاص بنا عبر الإنترنت
-                    مليء بجميع مكونات الطعام التي قد تحتاج لها، بالاضافة الي جميع مستلزمات المنزل. يمكنك التسوق بسهولة
-                    لشراء اي أجهزة منزلية من مجموعة كبيرة متاحة لدينا اون لاين تحتوي علي اجهزة تشمل ثلاجات، غسالة ملابس
-                    او تكييف، على سبيل المثال. اشتري من اكبر تشكيلة الكترونيات عالية الجودة اون لاين من موردين وعلامات
-                    تجارية موثوقة. يمكنك شراء تلفزيون جديد لغرفة المعيشة، الهاتف الذكي المفضل لديك أو حتى جهاز بلاي
-                    ستيشن 4وPS5، على سبيل المثال. احصل على أحدث إصدارات الهواتف قبل أي شخص آخر في البلد، سواء كنت ترغب
-                    في شراء احدث الموبايلات من ابل، شاومي، انفنكس، سامسونج او ريلمي، من بين العديد من ماركات الهواتف
-                    الاخري للاختيار من بينها بأرخص اسعار الموبايلات فى مصر. لدينا مجموعة مذهلة أخرى متاحة لدينا وهي
-                    مخصصة لأجهزة الكمبيوتر وأجهزة اللاب توب وجميع الاكسسوارات الخاصة بهم. تسوق لشراء طابعة، سكانر،
-                    مستلزمات الكمبيوتر أو شاشة كمبيوتر لتحسين تجربة الكمبيوتر أو اللاب توب الخاصة بك إلى اقصى حد! يتم
-                    توفير جميع هذه المنتجات وأكثر في جوميا مصر بأرخص سعر في السوق، لذلك اشتري اون لاين اليوم واستمتع
-                    بأسرع توصيل الي اي مكان في مصر.
-                </p>
-            </div>
-
-
-            <div class="about-jumai-item margin-block-end-20">
-                <h3 class="about-jumai-item-head margin-block-end-20">اكتشف عالم التسوق عبر الإنترنت اليوم</h3>
-                <p class="about-jumai-item-desc ">
-                    شتري عبر الانترنت واستمتع بأكبر عروض جوميا مصر التي لا تنتهي وتسوق من بين اكبر خصومات المتاحة طوال
-                    العام، وكل هذا من أجل إرضاء عملائنا. انضم إلى أعضاء صفحتنا على فيس بوك لتعرف كل العروض والتخفيضات
-                    قبل اي شخص آخر والتي تشمل اسبوع الموبايلات، رمضان، عيد ميلاد جوميا، عيد الأم. كما يمكنك أيضاً شراء
-                    تذاكر للحفلات والمناسبات الهامة الرائعة. لدينا فريق متخصص للإجابة على كل أسئلتك فورًا على مواقع
-                    التواصل الإجتماعي وخدمة العملاء متوفرة طوال الأسبوع للمساعدة في حل أي مشاكل والإجابة على جميع
-                    الاستفسارات، ببساطة اتصل علي 19586. اذا كنت بحاجة الي المساعدة في انشاء طلب جديد علي جوميا، اتصل بنا
-                    علي 15204 ابتدائا من 1 نوفمبر. بالإضافة إلى ذلك، إذا كنت تمتلك محل أو متجر، يمكنك الآن البدء في بيع
-                    منتجاتك على جوميا مصر حيث نحرص دائمًا على مساعدتك في زيادة مبيعاتك! كبر حجم أعمالك الآن وانضم لفريق
-                    شركاء جوميا. جوميا مصر توفر لك أفضل خدمات عبر الانترنت، منتجات أصلية 100% وعروض حصرية. استمتع بأسرع
-                    توصيل الى باب المنزل، طرق دفع امنة و سهلة، بالاضافة الى ارجاع مجاني لجميع المنتجات خلال 14 يوم من
-                    الاستلام، ويمكنك ايضا زيارة صفحة سياسة الاسترجاع للمزيد من المعلومات عن
-
-                </p>
-            </div>
-            <p class="text-danger margin-inline-end-20 margin-block-start-20">
-                احمي نفسك وعائلتك من الفيروس وابقي في المنزل. استمتع بوقتك في البيت واشتري اون لاين كل احتياجاتك من
-                جوميا مصر وسنقوم بتوصيل الطلبات حتي باب المنزل بدون تلامس
-            </p>
-        </section>
-
-    </main>
-
-    <!-- 
-        <div class="about-jumai-item margin-block-end-20">
-        <h3 class="about-jumai-item-head margin-block-end-20"></h3>
-        <p class="about-jumai-item-desc "></p>
-    </div> 
--->
-
-
-
+    <!-- #region Footer-->
     <!--Start Footer-->
     <div id="subscribe-news">
         <div class="container">
             <div class="row">
                 <div class="logo ">
-                    <a href="#" class="row align-items-center">
-                        <img src="./images/Main Images/logo_icon.ico" alt="logo">
+                    <a href="/" class="row align-items-center">
+                        <img src="../../images/Main Images/logo_icon.ico" alt="logo">
                         <span>jumia</span>
                     </a>
                 </div>
@@ -298,7 +198,7 @@
 
                 <div class="download-app">
                     <div class="row align-items-center">
-                        <img class="logo" src="./images/Main Images/logo_icon.ico" alt="logo">
+                        <img class="logo" src="../../images/Main Images/logo_icon.ico" alt="logo">
                         <div class="download-app-desc">
                             <h4>
                                 تنزيل تطبيق جوميا المجانى
@@ -554,23 +454,15 @@
 
     <!--End Footer-->
 
-
-    <!-- Start Scroll Top Button -->
-    <span id="btn-scroll-top">
-        <i class="fa fa-chevron-up"></i>
-    </span>
-    <!-- End Scroll Top Button -->
-
-    <!--Start Scripts-->
+    <!-- #endregion  Footer-->
+    <!-- #region Scripts-->
     <script src="https://kit.fontawesome.com/0b7cff1468.js" crossorigin="anonymous"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/footer.js"></script>
-    <script src="./js/scrollButtonTop.js"></script>
-    <script src="./js/home.js"></script>
-    <script src="./js/FlashSalesStart.js"></script>
-
-
-    <!-- End Scripts -->
+    <script src="../../js/master.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/footer.js"></script>
+    <!-- <script src="../../js/master.js"></script> -->
+    <script src="../../js/sing_in.js"></script>
+    <!-- #endregion Scripts-->
 </body>
 
 </html>

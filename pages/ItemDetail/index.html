@@ -8,29 +8,24 @@
     <title>جوميا مصر | أكبر أونلاين مول لتسوق عروض الإلكترونيات والموبايل والأزياء والأجهزة المنزلية والسوبر ماركت
         ومستلزمات التنظيف وغيرها!</title>
     <link rel="icon" href="https://www.jumia.com.eg/assets_he/favicon.87f00114.ico">
-    <link rel="stylesheet" href="./css/master.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/home.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/Item_detail.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <!-- <script src='handling_API.js'></script> -->
 
 </head>
 
 <body>
 
-    <div id="overlay" class=" row justify-content-center align-items-center">
-        <div class="rotate">
-            <img src="./images/Main Images/logo_icon.ico" alt="logo">
-            <span class="logo">jumia</span>
-        </div>
-    </div>
-
+    <div id="item-is-added" class="row justify-content-center align-items-center card padding" > تم اضافه المنتج من السله بنجاح :)</div>
     <!-- Start Page Header -->
     <!--Start Banner-->
     <div class="banner">
         <div class="container">
             <a href="./pages/free-shipping">
-                <img src="./images/Main Images/banner_img.jpg" alt="annocment">
+                <img src="../../images/Main Images/banner_img.jpg" alt="annocment">
             </a>
         </div>
     </div>
@@ -41,8 +36,8 @@
         <div class="container">
             <div class="row  justify-content-between align-items-center">
                 <div class="brand ">
-                    <a href="#" class="row align-items-center">
-                        <img src="./images/Main Images/logo_icon.ico" alt="logo">
+                    <a href="/" class="row align-items-center">
+                        <img src="/images/Main Images/logo_icon.ico" alt="logo">
                         <span class="logo">jumia</span>
                     </a>
                 </div>
@@ -69,7 +64,7 @@
                         <ul class="drop-down-menu card">
                             <li class="drop-down-box border-bottom-1">
                                 <div class="drop-down-box">
-                                    <a href="./pages/sign_in/" class="btn">تسجيل الدخول</a>
+                                    <a href="/sign_in/" class="btn">تسجيل الدخول</a>
                                 </div>
                             </li>
                             <div class="drop-down-box">
@@ -125,7 +120,7 @@
                         </ul>
                     </div>
                     <div class="nav-item">
-                        <a href="/pages/Cart"><i class="fa fa-shopping-cart"></i>
+                        <a href="../Cart"><i class="fa fa-shopping-cart"></i>
                             السله
                         </a>
                     </div>
@@ -137,145 +132,215 @@
     </header>
 
     <!-- End Page Header -->
-
-    <main class="container margin-block-start-20">
-        <section id="intro" class="row">
-
-            <aside class="col margin-inline-end-20 padding bg-white">
-                <ul id="Sections-menu">
-
+    <main class="container">
+        <div id="container">
+            <div id="maindiv">
+                <ul style="list-style-type: none;">
+                    <li>
+                        <img id="itemImage" src="32inchHD.jpg" alt="item Image" title="32inchHD">
+                        <hr>
+                    </li>
+                    <li>
+                        <h4>مشاركة هذا المنتج</h4>
+                    </li>
+                    <li>
+                        <i class="fa fa-facebook-square" style="font-size:25px;margin-left: 5px;"></i>
+                        <i class="fa fa-twitter-square" style="font-size:25px"></i>
+                    </li>
                 </ul>
-            </aside>
+                <ul style="list-style-type:none;">
+                    <li><input type="checkbox" id="heart">
+                        <label for="heart">♡</label>
+                        <label style="margin-top: 20px;font-size: 25px;margin-left: 20px;" id="name_label">Penduline
+                            كريم شعر للأطفال
+                            - بزيت المورينجا -لاصلاح الشعر - 150 مل</label><br><br>
+                        <label style="font-size: 20px;">الماركة: </label>
+                        <a href="#" id="item-brand">product |</a>
+                        <a href="#"> منتجات مشابهة من product</a>
+                        <br>
+                        <div id="rating">
 
-            <section class="slider col-2 margin-inline-end-20" style="flex:50%">
-                <div class="slider-inner">
-                    <div class="silder-inner-item" id="home-slider-inner">
+                        </div>
+                      <a href="#">( تقيمات موثقة للمنتج) </a><br><br>
+                        <a href="#" style="background-color:var(--main-color);color:white;">*توصيـل مجانـى</a>
+                        <hr>
+                    </li>
+                    <li>
+                        <label id="item_price" style="font-size:30px"><b> 85.00 جنيه </b></label><br>
+                        <del id="old_item_price" style="font-size:20px;color:rgb(182, 175, 175)"><del>220.00
+                                جنيه</del>
+                            </del><br>
+                        <span id="delivery_price">التوصيل من 10.00جنيه الى</span>
+                        <span id="delivery_place" style="font-size:15px;">6اكتوبر</span><br><br>
+                        <button id="add_item_tobin" class="btn">اضافة لسلة التسوق
+                            <i class="fa fa-cart-plus" style="float:right;font-size:22px;padding-right:10px;"></i>
+                        </button>
+                        <br><br>
+                        <hr>
 
-                    </div>
+
+                    </li>
+                    <li>
+
+                        <ul style="list-style-type: none;">
+                            <li>
+                                <h4>عروض:</h4>
+                            </li>
+
+                            <li>
+                                <a href="#">تقسيط على مزاجك من 6شهور الى 60 شهر مع فاليو</a>
+                                <img src="../../images/Main Images/jom_crown.png"
+                                    style="width:20px;height:20px;float:right;margin-left:5px">
+                                <br><br>
+                            </li>
+                            <li>
+                                <i class="fa fa-shield" style="font-size:24px;color: rgb(89, 89, 241);"></i>
+                                <a>فاتورة خط تليفونك الارضى متاحة الان ادفعها من هنا فى ثوانى</a>
+                                <br><br>
+                            </li>
+                            <li>
+                                <img src="../../images/Main Images/jom_crown.png" style="width:25px;height:25px">
+                                <a href="#">اشترك فى جوميا primo واستمتع بتوصيل مجانىعلى جميع الطلبات المحلية وجوميا
+                                    فوود</a>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <a style=" position: absolute; bottom:5px;right: 0;font-size: 17px;color: blue;" href="#">ابلاغ عن
+                    بيـانــات غيــر
+                    صحــيـحـة فــى المنــتج</a>
+            </div>
+
+
+            <div id="sidedive">
+                <h4>التوصيل و الارجاع</h4>
+                <hr>
+                <a href="#" style="font-size:17px;color:darkblue;float:left">التفاصيل</a>
+                <img src="../../images/Main Images/jumiaexpress.png" width="50%" height="30px"
+                    style="display:block;object-fit: contain;">
+
+                <label style="font-size: 14px;">توصيل مجاني عند شرائك من منتجات جوميا اكسبريس </label>
+
+
+                <hr>
+                <h3>اختار العنوان</h3>
+                <select id="cities" onchange="set_city(this.selectedIndex)"></select>
+                <select id="areas" style="margin-top: 10px;">
+                </select><br><br>
+                <label style="margin-right: 3px;float: none;"><b>توصيل الى باب المنزل</b></label>
+
+                <i class="fa fa-truck"
+                    style="font-size:28px;color:#F68B1E;padding:5px ;float: right;line-height: 50px;"></i>
+                <a href="#" style="float: left;">تفاصيل</a><br>
+                <label style="margin-right: 3px;">الشحن جنيه 22.23<br>
+                    يتم التوصيل من يوم ١٨ مايو عند الطلب <br> خلال hrs15 6mins </label>
+                <br><br>
+                <i class="fa fa-dropbox"
+                    style="font-size:28px;color:#F68B1E;padding:5px;float: right;line-height: 50px;"></i>
+                <label style="margin-right: 3px;float: none;"><b>مركــز التسليم </b></label>
+
+
+                <a href="#" style="float: left;">تفاصيل</a><br>
+                <label style="margin-right: 3px;">الشحن جنيه 22.23<br>
+                    يتم التوصيل من يوم ١٨ مايو عند الطلب <br> خلال hrs15 6mins </label>
+                <hr>
+                <img src="../../images/Main Images/jom_reback.png"
+                    style="width:25px;height:25px;float:right;line-height:50px">
+                <label style="margin-right: 3px;float: none;"><b>سياسة الارجاع </b></label><br>
+                <p style="padding-right: 20px;margin-top:5px">استرجاع المنتجات مجاناً لمدة 14 يوم (ماعدا الملابس
+                    الداخلية ومنتجات
+                    الإستخدام الشخصى) وحتي 30 يوم للمنتجات التالفة مع ضرورة الإبلاغ عنها فى غضون 24 ساعة من تاريخ
+                    الإستلام</p>
+            </div><br>
+
+     
+        </div>
+        <div class="clearfix"></div>
+        <div class="row justify-content-between">
+            <div class="col-3">
+                <div id="item_description" class="">
+                    <h2>مواصفات المنتج</h2>
+                    <hr>
+                    <ul style="font-size:18px" id="item_desciption_list">
+                        <li>رقم الموديل: S.3000</li>
+                        <li>R.M.S: 38 وات</li>
+                        <li>صب ووفر: RMS14W</li>
+                        <li>ستالايت: RMS12WX2</li>
+                        <li>استجابة التردد: 20 هيرتز - 20 كيلو هيرتز</li>
+                        <li>جهاز التحكم عن بعد</li>
+                        <li>دعم البلوتوث / راديو FM / ذاكرة فلاش USB & بطاقة الذاكر</li>
+                    </ul>
                 </div>
-                <span class="next btn-slid active"><i class="fa fa-chevron-right"></i></span>
-                <span class="prev btn-slid"><i class="fa fa-chevron-left"></i></span>
+                
+            </div>
+            <div class="col column padding">
+                <div id="want_sell">
+                    <p><b>هل لديك منـتج للبيع ؟</b></i><br>اضغط
+                        هنا
+                        لادراج منتجك</p>
+        
+                </div>
+                    <div class="clearfix"></div>
+                <div id="side_list">
+        
+                    <p style="height: 27%;width: 100%;font-size: 18px;"><i class="fa fa-file-text-o"
+                            style="font-size:27px;margin-left: 5px;"></i>مواصفات المنتج</p>
+                    <p style="height: 27%;width:100%;font-size:18px;"><i class="fa fa-list-ul"
+                            style="font-size:27px;margin-left: 5px;"></i>المواصفات </p>
+                    <p style="height: 27%;width:100%;font-size: 18px;"><i class="fa fa-commenting-o"
+                            style="font-size:27px;margin-left: 5px;"></i>اراء العمــلاء الموثقة</p>
+        
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <!-- <div id="description">
+            <h2>المواصفات</h2>
+            <hr>
+            <div id="maindescription">
+                <h3 style="padding:5px ;">المواصفات الرئيسية :</h3>
+                <hr>
+                <ul style="font-size:18px">
+                    <li>: S.3000</li>
+                    <li>R.M.S: 38 وات</li>
+                    <li>صب ووفر: RMS14W</li>
+                    <li>ستالايت: RMS12WX2</li>
+                    <li>استجابة التردد: 20 هيرتز - 20 كيلو هيرتز</li>
+                    <li>جهاز التحكم عن بعد</li>
+                    <li>تدعم البلوتوث / راديو FM / ذاكرة فلاش USB & بطاقة الذاكر</li>
 
-                <ul class="bollits row">
                 </ul>
-            </section>
-            <div class="column col">
-                <img src="./images/Home Images/flash.png" class="margin-block-end-20" alt="">
-                <img src="./images/Home Images/help.jpg" alt="">
             </div>
-        </section>
+            <div id="box_content">
+                <h3 style="padding:5px ;">محتويات العبوة :</h3>
+                <hr>
 
-        <section id="jumia-express-image">
-            <div class="container margin-block-start-20 margin-block-end-20 card" style="padding: 0; ">
-                <img class="img-cover"
-                    src="https://eg.jumia.is/cms/MD-22/JE-General_New/Jumia_Express_-1152x252_AR-(4).jpg" alt="">
+                <label id="box_content_label" style="margin:5px;font-size: 18px;">ريموت وكيس الوصلات</label>
             </div>
+            <div id="details">
+                <h3 style="padding:5px ;"> المواصفات:</h3>
+                <hr>
+
+                <ul style="font-size:18px">
+                    <li>SKU: HE027EA1ASQE8NAFAMZ </li>
+                    <li> الموديل: s.3000 </li>
+                    <li>بلد الصنع: China </li>
+                    <li> اللون: black</li>
+                </ul>
             </div>
-        </section>
-
-        <section id="jumia-all-you-need">
-            <div class="section-title row justify-content-center padding align-items-center"
-                style="background-color: #FEE2CC;">كل ما تحتاجه!</div>
-            <div id="jumia-all-you-need-anoncement"
-                class="row padding margin-block-start-20 margin-block-end-20 wrap justify-content-between">
-
-            </div>
-
-        </section>
-
-
-        <section id="about-jumai" class=" bg-white card margin-block-end-20 margin-block-start-20">
-            <div class="about-jumai-item margin-block-end-20">
-                <h3 class="about-jumai-item-head margin-block-end-20">
-                    جوميا مصر - أكبر موقع للتسوق عبر الإنترنت
-                </h3>
-                <p class="about-jumai-item-desc">
-                    أصبحت مواقع التسوق عبر الإنترنت الآن جزء من حياتنا اليومية، لأن الجميع يتمتع بإمكانية شراء كل ما
-                    يحتاجه، سواء كانت ملابس أو إلكترونيات، دون الحاجة إلى الانتقال من المنزل. هذا ما تقدمه جوميا مصر،
-                    والأفضل من هذا أن <strong>جوميا مصر</strong> توفر لك امكانية العثور علي كل المنتجات التي تبحث عنها
-                    في متجر واحد. هذا ما يجعل جوميا أحد أفضل مواقع تسوق عبر الإنترنت في مصر.
-                </p>
-            </div>
-            <div class="about-jumai-item margin-block-end-20">
-                <h3 class="about-jumai-item-head margin-block-end-20">
-                    استمتع بعروض وخصومات من جوميا لا تنتهي
-                </h3>
-                <p class="about-jumai-item-desc ">
-                    جوميا هي موقع تسوق الكتروني ممتع وسهل الاستخدام عند الحاجة إلي شراء أي نوع من المنتجات والأجهزة.
-                    نؤكد لك أنك ستعثر على شيء يعجبك في الكتالوج الخاص بنا عند التصفح عبر الانترنت في جوميا مصر. نوفر لكم
-                    <strong>كتالوج ملابس</strong> اون لاين يحتوي علي أكثر من مليون منتج للاختيار من بينهم! يمكنك التسوق
-                    لأي شيء تحتاجه سواء كنت تبحث عن<strong> ملابس محجبات</strong> او ملابس الأطفال واستمتع بالحصول علي
-                    <strong>احدث الازياء</strong> في مصر. جوميا مصر هي واحدة من أكبر مواقع تسوق اون لاين لأننا نسعى
-                    دائمًا إلى توسيع الكتالوج الخاص بنا لتقديم جميع المنتجات والاجهزة التي يمكن لعملائنا أن يبحثوا عن
-                    شرائها عبر الإنترنت
-                </p>
-            </div>
-
-            <h3 style="font-size: 1.6rem; font-weight:400" class="margin-block-end-20 text-main">تسوق الآن جميع المنتجات
-                عبر الإنترنت</h3>
-
-            <div class="about-jumai-item margin-block-end-20">
-                <h3 class="about-jumai-item-head margin-block-end-20">
-                    اطلب الكترونيات او اجهزة منزلية من جوميا مصر
-                </h3>
-                <p class="about-jumai-item-desc ">
-                    اشتري الاكلات والطعام المفضل لديك من خلال<strong> سوبرماركت جوميا</strong> الخاص بنا عبر الإنترنت
-                    مليء بجميع مكونات الطعام التي قد تحتاج لها، بالاضافة الي جميع مستلزمات المنزل. يمكنك التسوق بسهولة
-                    لشراء اي أجهزة منزلية من مجموعة كبيرة متاحة لدينا اون لاين تحتوي علي اجهزة تشمل ثلاجات، غسالة ملابس
-                    او تكييف، على سبيل المثال. اشتري من اكبر تشكيلة الكترونيات عالية الجودة اون لاين من موردين وعلامات
-                    تجارية موثوقة. يمكنك شراء تلفزيون جديد لغرفة المعيشة، الهاتف الذكي المفضل لديك أو حتى جهاز بلاي
-                    ستيشن 4وPS5، على سبيل المثال. احصل على أحدث إصدارات الهواتف قبل أي شخص آخر في البلد، سواء كنت ترغب
-                    في شراء احدث الموبايلات من ابل، شاومي، انفنكس، سامسونج او ريلمي، من بين العديد من ماركات الهواتف
-                    الاخري للاختيار من بينها بأرخص اسعار الموبايلات فى مصر. لدينا مجموعة مذهلة أخرى متاحة لدينا وهي
-                    مخصصة لأجهزة الكمبيوتر وأجهزة اللاب توب وجميع الاكسسوارات الخاصة بهم. تسوق لشراء طابعة، سكانر،
-                    مستلزمات الكمبيوتر أو شاشة كمبيوتر لتحسين تجربة الكمبيوتر أو اللاب توب الخاصة بك إلى اقصى حد! يتم
-                    توفير جميع هذه المنتجات وأكثر في جوميا مصر بأرخص سعر في السوق، لذلك اشتري اون لاين اليوم واستمتع
-                    بأسرع توصيل الي اي مكان في مصر.
-                </p>
-            </div>
-
-
-            <div class="about-jumai-item margin-block-end-20">
-                <h3 class="about-jumai-item-head margin-block-end-20">اكتشف عالم التسوق عبر الإنترنت اليوم</h3>
-                <p class="about-jumai-item-desc ">
-                    شتري عبر الانترنت واستمتع بأكبر عروض جوميا مصر التي لا تنتهي وتسوق من بين اكبر خصومات المتاحة طوال
-                    العام، وكل هذا من أجل إرضاء عملائنا. انضم إلى أعضاء صفحتنا على فيس بوك لتعرف كل العروض والتخفيضات
-                    قبل اي شخص آخر والتي تشمل اسبوع الموبايلات، رمضان، عيد ميلاد جوميا، عيد الأم. كما يمكنك أيضاً شراء
-                    تذاكر للحفلات والمناسبات الهامة الرائعة. لدينا فريق متخصص للإجابة على كل أسئلتك فورًا على مواقع
-                    التواصل الإجتماعي وخدمة العملاء متوفرة طوال الأسبوع للمساعدة في حل أي مشاكل والإجابة على جميع
-                    الاستفسارات، ببساطة اتصل علي 19586. اذا كنت بحاجة الي المساعدة في انشاء طلب جديد علي جوميا، اتصل بنا
-                    علي 15204 ابتدائا من 1 نوفمبر. بالإضافة إلى ذلك، إذا كنت تمتلك محل أو متجر، يمكنك الآن البدء في بيع
-                    منتجاتك على جوميا مصر حيث نحرص دائمًا على مساعدتك في زيادة مبيعاتك! كبر حجم أعمالك الآن وانضم لفريق
-                    شركاء جوميا. جوميا مصر توفر لك أفضل خدمات عبر الانترنت، منتجات أصلية 100% وعروض حصرية. استمتع بأسرع
-                    توصيل الى باب المنزل، طرق دفع امنة و سهلة، بالاضافة الى ارجاع مجاني لجميع المنتجات خلال 14 يوم من
-                    الاستلام، ويمكنك ايضا زيارة صفحة سياسة الاسترجاع للمزيد من المعلومات عن
-
-                </p>
-            </div>
-            <p class="text-danger margin-inline-end-20 margin-block-start-20">
-                احمي نفسك وعائلتك من الفيروس وابقي في المنزل. استمتع بوقتك في البيت واشتري اون لاين كل احتياجاتك من
-                جوميا مصر وسنقوم بتوصيل الطلبات حتي باب المنزل بدون تلامس
-            </p>
-        </section>
+        </div> -->
+        
 
     </main>
-
-    <!-- 
-        <div class="about-jumai-item margin-block-end-20">
-        <h3 class="about-jumai-item-head margin-block-end-20"></h3>
-        <p class="about-jumai-item-desc "></p>
-    </div> 
--->
-
-
-
+    <div class="clearfix"></div>
     <!--Start Footer-->
     <div id="subscribe-news">
         <div class="container">
             <div class="row">
                 <div class="logo ">
-                    <a href="#" class="row align-items-center">
-                        <img src="./images/Main Images/logo_icon.ico" alt="logo">
+                    <a href="/" class="row align-items-center">
+                        <img src="../../images/Main Images/logo_icon.ico" alt="logo">
                         <span>jumia</span>
                     </a>
                 </div>
@@ -298,7 +363,7 @@
 
                 <div class="download-app">
                     <div class="row align-items-center">
-                        <img class="logo" src="./images/Main Images/logo_icon.ico" alt="logo">
+                        <img class="logo" src="../../images/Main Images/logo_icon.ico" alt="logo">
                         <div class="download-app-desc">
                             <h4>
                                 تنزيل تطبيق جوميا المجانى
@@ -563,14 +628,12 @@
 
     <!--Start Scripts-->
     <script src="https://kit.fontawesome.com/0b7cff1468.js" crossorigin="anonymous"></script>
-    <script src="./js/header.js"></script>
-    <script src="./js/footer.js"></script>
-    <script src="./js/scrollButtonTop.js"></script>
-    <script src="./js/home.js"></script>
-    <script src="./js/FlashSalesStart.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/footer.js"></script>
+    <script src="../../js/scrollButtonTop.js"></script>
+    <script src="../../js/ItemDetails.js"></script>
 
 
-    <!-- End Scripts -->
 </body>
 
 </html>

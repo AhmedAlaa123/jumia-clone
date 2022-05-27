@@ -4,21 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه تسجيل الدخول</title>
-    <link rel="stylesheet" href="../css/create_acount.css">
-    <link rel="stylesheet" href="../css/master.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    
+    <title>جوميا مصر | أكبر أونلاين مول لتسوق عروض الإلكترونيات والموبايل والأزياء والأجهزة المنزلية والسوبر ماركت
+        ومستلزمات التنظيف وغيرها!</title>
+    <link rel="icon" href="https://www.jumia.com.eg/assets_he/favicon.87f00114.ico">
+    <link rel="stylesheet" href="../../css/master.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/Categories.css">
+
 </head>
 <body>
-    <!-- #region Header-->
+    <!-- Start Page Header -->
+    <!--Start Banner-->
+    <div class="banner">
+        <div class="container">
+            <a href="#">
+                <img src="../../images/Main Images/banner_img.jpg" alt="annocment">
+            </a>
+        </div>
+    </div>
+
+    <!-- End Banner-->
+
     <header>
         <div class="container">
             <div class="row  justify-content-between align-items-center">
                 <div class="brand ">
-                    <a href="../index.html" class="row align-items-center">
-                        <img src="../images/Main Images/logo_icon.ico" alt="logo">
+                    <a href="/" class="row align-items-center">
+                        <img src="../../images/Main Images/logo_icon.ico" alt="logo">
                         <span class="logo">jumia</span>
                     </a>
                 </div>
@@ -45,10 +58,7 @@
                         <ul class="drop-down-menu card">
                             <li class="drop-down-box border-bottom-1">
                                 <div class="drop-down-box">
-                                    <a href="#" class="btn">تسجيل الدخول</a>
-                                    <form action="#">
-                                        <input type="email" name="email" id="email" placeholder="البريد الالكترونى"> 
-                                    </form>
+                                    <a href="../sign_in/" class="btn">تسجيل الدخول</a>
                                 </div>
                             </li>
                             <div class="drop-down-box">
@@ -114,60 +124,35 @@
         </div>
 
     </header>
-    <!-- #endregion  Header-->
 
-    <!-- #region  Main-->
-    <div>
-        <div class="container">
-            <div class="row">
-                <div class="column col justify-content-between margin-block-start-20 margin-block-end-20 padding" id="sigin-in" >
-                    <h2 class="text-center text-main">تسجيل الدخول</h2>
-                    <form action="#" id="user-data" class="column margin-block-start-20 padding" style="border-left: 1px solid var(--border-color);">
-                        <input type="email" name="email" id="email" placeholder="البريد الالكترونى" class="margin-block-end-20" required>
-                        <div class="column margin-block-start-20 margin-block-end-20" id="password_container">
-                            <i class="fa fa-eye fa-eye-slash" id="show-password"></i>
-                            <input type="password" id="password" name="password" placeholder="كلمه المرور" required>
-                        </div>
-                        <div class="row justify-content-between margin-block-end-20 margin-block-start-20">
-                            <div >
-                                <input type="checkbox" id="remember-me" style="cursor: pointer;">
-                                <label for="remember-me" style="cursor: pointer;">تذكرنى</label>
-                            </div>
-                            <a href="#" class="text-main a-hover-underlin"  ><b>هل نسيت كلمه السر ؟</b></a>
-                        </div>
-                        <button type="submit" id="btn-sign-up-mail" class="btn margin-block-end-20 margin-block-start-20 " style="padding:16px" >تسجيل الدخول</button>
+    <!-- End Page Header -->
 
-                         <button id="btn-sign-up-face"  class="btn-face margin-block-end-20 margin-block-start-20 " style="padding:16px">التسجيل عن طريق الفيسبوك</button>
-                    </form>
-                </div>
 
-                <div class="column col padding justify-content-between margin-block-start-20 margin-block-end-20" id="sign-up">
-                    <div >
-                        <h2 class="text-center text-main">انشاء حساب جوميا</h2>
-                        <p class="margin-block-start-20" style="font-size: 1.2rem;">
-                            قم بإنشاء حسابك الخاص علي جوميا بكل سهولة عن طريق الايميل او عن طريق الفيسبوك
-                        </p>
+    <main class="container margin-block-start-20 margin-block-end-20  padding">
+        <section id="categories-images-container" class="row wrap ">
 
-                    </div>
-                    <div class="column">
-                        <a id="btn-sign-up-mail" class="btn margin-block-end-20 margin-block-start-20 text-center" style="padding:16px" href="./Create_acount.html" >انشاء الحساب باستخدام البريد الالكترونى</a>
+        </section>
 
-                        <button id="btn-sign-up-face"  class="btn-face margin-block-end-20 margin-block-start-20 " style="padding:16px">التسجيل عن طريق الفيسبوك</button>
-                    </div>
-                </div>
+        <section id="items" class=" margin-block-start-20 margin-block-end-20 padding bg-white">
+            
+            <div id="items-container" class="row wrap  margin-block-start-20 margin-block-end-20 ">
+
             </div>
-        </div>
-    </div>
-    <!-- #endregion Main-->
+        </section>
 
-    <!-- #region Footer-->
+    </main>
+
+
+
+
+
         <!--Start Footer-->
         <div id="subscribe-news">
             <div class="container">
                 <div class="row">
                     <div class="logo ">
-                        <a href="#" class="row align-items-center">
-                            <img src="../images/Main Images/logo_icon.ico" alt="logo">
+                        <a href="/" class="row align-items-center">
+                            <img src="../../images/Main Images/logo_icon.ico" alt="logo">
                             <span>jumia</span>
                         </a>
                     </div>
@@ -190,7 +175,7 @@
     
                     <div class="download-app">
                         <div class="row align-items-center">
-                            <img class="logo" src="../images/Main Images/logo_icon.ico" alt="logo">
+                            <img class="logo" src="../../images/Main Images/logo_icon.ico" alt="logo">
                             <div class="download-app-desc">
                                 <h4>
                                     تنزيل تطبيق جوميا المجانى
@@ -444,14 +429,20 @@
         </footer>
     
         <!--End Footer-->
-    
-    <!-- #endregion  Footer-->
-    <!-- #region Scripts-->
-    <script src="https://kit.fontawesome.com/0b7cff1468.js" crossorigin="anonymous"></script>
-    <script src="../js/header.js"></script>
-    <script src="../js/footer.js"></script>
-    <script src="../js/master.js"></script>
-    <script src="../js/sing_in.js"></script>
-    <!-- #endregion Scripts-->
+
+  <!-- Start Scroll Top Button -->
+  <span id="btn-scroll-top">
+    <i class="fa fa-chevron-up"></i>
+</span>
+<!-- End Scroll Top Button -->
+
+<!-- Start Scripts -->
+<script src="https://kit.fontawesome.com/0b7cff1468.js" crossorigin="anonymous"></script>
+<script src="../../js/header.js"></script>
+<script src="../../js/footer.js"></script>
+<script src="../../js/scrollButtonTop.js"></script>
+<script src="../../js/master.js"></script>
+<script src="../../js/categoriesPage.js"></script>
+<!-- End Scripts -->
 </body>
 </html>

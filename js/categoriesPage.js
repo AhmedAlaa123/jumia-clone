@@ -19,9 +19,7 @@ function  setCatesImages(categories){
         
         var cateImgesBaseUrl='../'+categories[index].Category_Image_baseUrl
         categories[index].Category_images.forEach(image => {
-            // console.log()
-
-            // creating div
+       
 
             var div=document.createElement('div')
             div.classList.add('col-3')
@@ -29,8 +27,6 @@ function  setCatesImages(categories){
             var imgElement=document.createElement('img');
             imgElement.setAttribute('src',`${cateImgesBaseUrl}/${image}`)
             imgElement.classList='img-cover'
-            // imgElement.style.minHeight='300px'
-            // imgElement.style.objectFit=''
             div.appendChild(imgElement)
             
             CatesImgsContainer.appendChild(div)
@@ -43,7 +39,7 @@ function  setCatesImages(categories){
     }
 }
 
-getData('get','../Database/Categories.json',false,setCatesImages)
+getData('get','../../Database/Categories.json',false,setCatesImages)
 
 function setItems(items){
    if(!cateId) 
@@ -67,14 +63,14 @@ function setItems(items){
 
         item.className = 'card column item padding'
         item.innerHTML = `
-              <img class="item-img" src="../${product.ImageUrl}" alt="">
+              <img class="item-img" src="../../${product.ImageUrl}" alt="">
                     <h4 class="item-name">${product.Name}</h4>
                     <h5 class="item-price">${(product.Price - product.Price *  (product.Discount)/100).toFixed(2)} جنيه</h5>
                     ${product.Discount ? '<del class="item-before-discount">' + product.Price + ' جنيه</del>' : ''}
                     ${product.Discount ? '<span class="item-discount text-danger">' + product.Discount + '%-</span>' : ''}
         `
         item.addEventListener('click',e=>{
-            location.assign(`./ItemDetail.html?itemId=${product.ItemId}`)
+            location.assign(`../ItemDetail/?itemId=${product.ItemId}`)
             sessionStorage.setItem('product_details',JSON.stringify(product))
         })
         itemsContainer.appendChild(item)
@@ -86,7 +82,7 @@ function setItems(items){
 
 
 }
-getData('get','../Database/items.json',false,setItems)
+getData('get','../../Database/items.json',false,setItems)
 
 
 
