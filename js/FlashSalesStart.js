@@ -143,8 +143,8 @@ function showFlashSalesProduct(products) {
                     ${product.item.Discount ? '<span class="item-discount text-danger">' + product.item.Discount + '%-</span>' : ''}
         `
         item.addEventListener('click',e=>{
-            location.
-            location.assign(`./Pages/ItemDetail.html?itemId=${product.item.ItemId}`)
+            sessionStorage.setItem('product_details',JSON.stringify(product.item))
+            location.assign(`/pages/ItemDetail/?itemId=${product.ItemId}`)
         })
 
         itemsView.appendChild(item)

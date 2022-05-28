@@ -84,10 +84,14 @@ function dispalyItemAsCard(item, index) {
     var h2 = document.createElement(h2)
     h2.innerHTML = item.Name
     col3.appendChild(h2)
+    var itemPriceElement=document.createElement('h5')
+    itemPriceElement.className='margin-block-start-20'
+    itemPriceElement.innerHTML=`سعر المفرد  : ${item.finalPrice} جنيه`
+    col3.appendChild(itemPriceElement)
     var div = document.createElement('div')
     div.className = 'margin-block-start-20'
-    var h3 = document.createElement('h3')
-    h3.innerHTML = `${item.totalPrice} : جنيه`
+    var h3 = document.createElement('h5')
+    h3.innerHTML = `السعر : ${item.totalPrice}  جنيه`
     div.appendChild(h3)
     var label = document.createElement('label')
     label.innerHTML = `الكميه : `
@@ -101,7 +105,7 @@ function dispalyItemAsCard(item, index) {
         var quntity = parseInt(e.target.value)
         item.quantity = quntity
         item.totalPrice = (item.finalPrice * quntity).toFixed(2);
-        h3.innerHTML = `${item.totalPrice} : جنيه`
+        h3.innerHTML = `السعر : ${item.totalPrice}  جنيه`
         updateTotalPrice()
 
     })

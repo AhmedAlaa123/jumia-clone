@@ -17,7 +17,7 @@ function load(...params) {
         var item=JSON.parse(sessionStorage.getItem('product_details'))
         
         console.log(item)
-        itemImageElement.src=`../../${item.ImageUrl}`
+        itemImageElement.src=`/${item.ImageUrl}`
         itemImageElement.title=item.Name;
         itemNameElement.innerHTML=item.Name
         itemBrandElement.innerHTML=`${item.Brand} |`

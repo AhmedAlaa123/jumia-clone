@@ -1,12 +1,12 @@
 {
     "time": {
-        "hours":20,
+        "hours":200,
         "startDate": {
             "year": 2022,
             "month": 5,
-            "day": 23,
+            "day": 28,
             "hour":1,
-            "minut":25,
+            "minut":0,
             "second":0
         }
     },

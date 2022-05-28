@@ -79,7 +79,7 @@ loginForm.addEventListener('submit',(e)=>{
 
         alert('شكرا على تسجيل الدخول')
         sessionStorage.setItem('issigned',true)
-        location.href='/';
+        history.back();
     }
     else{
         alert('الاميل او كلمه المرور خاطئه!')
