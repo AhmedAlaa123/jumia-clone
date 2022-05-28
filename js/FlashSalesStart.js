@@ -144,7 +144,7 @@ function showFlashSalesProduct(products) {
         `
         item.addEventListener('click',e=>{
             sessionStorage.setItem('product_details',JSON.stringify(product.item))
-            location.assign(`/pages/ItemDetail/?itemId=${product.ItemId}`)
+            location.assign(`/pages/ItemDetail/?itemId=${product.item.ItemId}`)
         })
 
         itemsView.appendChild(item)
