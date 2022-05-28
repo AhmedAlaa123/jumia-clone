@@ -10,6 +10,12 @@ btnPayNowElement.style.display = 'block'
 btnPayNowElement.innerHTML = 'الطلب الان'
 
 btnPayNowElement.addEventListener('click', event => {
+    if(!sessionStorage.getItem('issigned'))
+    {
+        alert('يجب تسجيل الدخول لاتمام عمليه الشراء اولا سيتم تحويلك الى صفحه تسجيل الدخول (:')
+        location.href='/pages/sign_in'
+        return
+    }
     cartItems = []
     sessionStorage.setItem('cartItems', JSON.stringify(cartItems))
     alert('تم تنفيذ طلبك وسيكون طلبك بحوزتك فى اقرب وقت')
