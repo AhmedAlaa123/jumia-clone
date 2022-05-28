@@ -180,21 +180,21 @@ will-change: font-size;
 
  #item-is-added{
   position: absolute;
-  top: -100%;
-  left: 50%;
-  transform: translateX(-50%);
+  z-index: -1;
+  top: 50vh;
+  right: -100%;
+  transform: translateY(-50%);
   min-width: 300px;
   min-height: 150px;
   transition: var(--main-transition);
-  z-index: -1;
-  color: var(--main-color);
-  background-color: var(--blue);
+
+  background-color: rgb(226, 16, 216);
   font-size: 2rem;
   color: #fff;
   font-weight: 700;
-  border-bottom: 4px solid green;
+  border-bottom: 4px solid rgb(27, 121, 150);
 }
 #item-is-added.active{
-  top: 100px;
+  right: 100px;
   z-index: 100000;
 }
