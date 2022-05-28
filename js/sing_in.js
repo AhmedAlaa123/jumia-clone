@@ -1,9 +1,23 @@
 var loginForm=document.getElementById('user-data')
 var users=[]
 var rememberMeCbx=document.getElementById('remember-me')
+var showPassword = document.getElementById('show-password')
+var passwordInput = document.getElementById('password')
+
+showPassword.addEventListener('click', (e) => {
+    if (passwordInput.getAttribute('type') === 'password')
+        passwordInput.setAttribute('type','text')
+    else
+        passwordInput.setAttribute('type','password')
+
+        // showPassword.classList.toggle
+        e.target.classList.toggle('fa-eye-slash')
+})
+
+
 if(!sessionStorage.getItem('users'))
 {
-    getData('get','../../Database/users.json',false,getUsers)
+    getData('get','/Database/users.json',false,getUsers)
 }
 else{
     users=JSON.parse(sessionStorage.getItem('users'))
@@ -52,7 +66,7 @@ loginForm.addEventListener('submit',(e)=>{
     }
     if(users.length==0)
     {
-        getData('get','../../Database/users.json',false,getUsers)
+        getData('get','/Database/users.json',false,getUsers)
         return
     }
     console.log(users,'users')
@@ -63,12 +77,12 @@ loginForm.addEventListener('submit',(e)=>{
     if(index>-1)
     {
 
-        alert('Thanks for Sign in')
+        alert('شكرا على تسجيل الدخول')
         sessionStorage.setItem('issigned',true)
         location.href='/';
     }
     else{
-        alert('Email Or Password is Wrrong!')
+        alert('الاميل او كلمه المرور خاطئه!')
         return
     }
 

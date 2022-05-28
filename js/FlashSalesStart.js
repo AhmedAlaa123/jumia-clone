@@ -99,7 +99,7 @@ function getFlashSalesProducts() {
         
 
     }
-    Xhttp.open('get', '../Database/FlashSales.json')
+    Xhttp.open('get', '/Database/FlashSales.json')
     Xhttp.send()
 }
 

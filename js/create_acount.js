@@ -17,7 +17,7 @@ showPassword.addEventListener('click', (e) => {
 
 if(!sessionStorage.getItem('users'))
 {
-    getData('get','../Database/users.json',false,getUsers)
+    getData('get','/Database/users.json',false,getUsers)
 }
 else{
     users=JSON.parse(sessionStorage.getItem('users'))
@@ -27,15 +27,7 @@ function getUsers(usersData) {
     users=usersData
     sessionStorage.setItem('users', JSON.stringify(users))
     console.log(users)
-    // var xhr = new XMLHttpRequest()
-    
-    // xhr.onreadystatechange = (event) => {
-    //     if (xhr.readyState == 4 && xhr.status == 200) {
-    //         users = JSON.parse(xhr.responseText)
-    //     }
-    // }
-    // xhr.open('get', '../Database/users.json', false)
-    // xhr.send()
+  
 }
 
 
@@ -44,7 +36,7 @@ userDataForm.addEventListener('submit', e => {
 
     e.preventDefault()
     if (!users.length) {
-        getData('get','../Database/users.json',false,getUsers)
+        getData('get','/Database/users.json',false,getUsers)
         return
     }
     // console.log(e.email)
